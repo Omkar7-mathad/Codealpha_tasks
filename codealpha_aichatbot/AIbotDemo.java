@@ -10,22 +10,22 @@ class Chatbot {
             return "Hello! How can I assist you today?";
         else if (input.contains("your name"))
             return "I am your friendly chatbot!";
-        else if(input.contains("developer"))
+        else if(input.contains("developer name"))
             return "Omkar Mathad";
         else if (input.contains("how are you"))
             return "I am just code, but I am functioning well!";
         else if (input.contains("thank"))
-            return "You're welcome! 😊";
+            return "You're welcome! ";
         else if (input.contains("what can you do"))
             return "I can greet you, answer simple questions, and chat with you!";
         else if (input.contains("who created you"))
-            return "I was created by a Java developer like you! 😎";
+            return "I was created by a Java developer like you! ";
         else if (input.contains("time"))
             return "Sorry, I cannot tell the time yet, but I am learning!";
         else if (input.contains("date"))
             return "I cannot access the current date now, but maybe in version 2.0!";
         else if (input.contains("joke"))
-            return "Why do programmers prefer dark mode? Because light attracts bugs! 😂";
+            return "Why do programmers prefer dark mode? Because light attracts bugs! ";
         else if (input.contains("java"))
             return "Java is a powerful, object-oriented programming language!";
         else if (input.contains("weather"))
@@ -33,11 +33,11 @@ class Chatbot {
         else if (input.contains("your purpose"))
             return "My purpose is to practice Java and become smarter with you!";
         else if (input.contains("good morning"))
-            return "Good morning! Have a productive day ahead! 🌞";
+            return "Good morning! Have a productive day ahead! ";
         else if (input.contains("good afternoon"))
-            return "Good afternoon! Have a productive day ahead! 🌞";
+            return "Good afternoon! Have a productive day ahead! ";
         else if (input.contains("good night"))
-            return "Good night! Sleep well and dream big! 🌙";
+            return "Good night! Sleep well and dream big! ";
         else if (input.contains("bye"))
             return "Goodbye! Have a great day!";
 
@@ -110,7 +110,7 @@ public class AIbotDemo extends JFrame implements ActionListener {
         sendButton.addActionListener(this);
         inputField.addActionListener(this);
 
-        chatArea.append("Bot: Welcome to AI Chatbot! 😊\n");
+        chatArea.append("Bot: Welcome to AI Chatbot! \n");
         chatArea.append("Bot: Type your message below and press Enter or Send.\n\n");
 
         setVisible(true);
@@ -132,7 +132,7 @@ public class AIbotDemo extends JFrame implements ActionListener {
         inputField.setText("");
 
         if (userInput.equalsIgnoreCase("bye")) {
-            JOptionPane.showMessageDialog(this, "Chatbot is closing. Goodbye! 👋");
+            JOptionPane.showMessageDialog(this, "Chatbot is closing. Goodbye! ");
             System.exit(0);
         }
     }
@@ -141,6 +141,7 @@ public class AIbotDemo extends JFrame implements ActionListener {
         SwingUtilities.invokeLater(() -> new AIbotDemo());
     }
 }
+
 
 
 
